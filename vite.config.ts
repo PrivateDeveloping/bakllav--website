@@ -20,8 +20,8 @@ export default defineConfig({
       },
       server: { entry: "server" },
     }),
+    nitro(),
     react(),
-    nitro({ defaultPreset: "cloudflare-module" }),
   ],
   resolve: {
     alias: {
