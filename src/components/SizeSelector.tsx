@@ -10,7 +10,7 @@ export function SizeSelector({
   className?: string;
 }) {
   return (
-    <div className={`flex flex-wrap gap-2 ${className}`}>
+    <div className={`grid grid-cols-3 gap-2 sm:flex sm:flex-wrap ${className}`}>
       {sizes.map((s) => {
         const active = s.id === value;
         return (
@@ -19,14 +19,14 @@ export function SizeSelector({
             type="button"
             onClick={() => onChange(s.id)}
             aria-pressed={active}
-            className={`min-w-[7.5rem] border px-4 py-2.5 text-left text-sm transition-colors ${
+            className={`min-w-0 border px-2 py-2.5 text-center text-[0.82rem] transition-colors sm:min-w-[7.5rem] sm:px-4 sm:text-left sm:text-sm ${
               active
                 ? "border-honey bg-honey/12 text-foreground"
                 : "border-border text-muted-foreground hover:border-honey/60"
             }`}
           >
-            <span className="block">{s.label}</span>
-            <span className="block text-xs text-muted-foreground">{eur(s.price)}</span>
+            <span className="block whitespace-nowrap">{s.label}</span>
+            <span className="block whitespace-nowrap text-xs text-muted-foreground">{eur(s.price)}</span>
           </button>
         );
       })}

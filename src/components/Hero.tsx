@@ -15,22 +15,19 @@ export function Hero() {
             Bakllavë e bërë në shtëpi, me shije tradicionale.
           </h1>
 
-          <p className="max-w-[520px] text-[18px] leading-[1.65] text-[#5C4E42]">
+          <p className="hidden max-w-[520px] text-[18px] leading-[1.65] text-[#5C4E42] md:block">
             Petë të hapura me dorë, arra e gjalpë i vërtetë, pa konservues. Tepsi e freskët nga
             furra për familje, dasma dhe festa.
           </p>
 
-          <div className="flex items-center gap-6">
-            <div>
+          <div className="flex items-center justify-between gap-3 sm:justify-start sm:gap-5 md:block">
+            <div className="min-w-0 md:mb-5">
               <p className="font-serif text-[30px] leading-none text-[#241A12]">30 €</p>
               <p className="mt-1 text-[13px] text-[#8A7969]">tepsia e vogël · 20 copë</p>
             </div>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-5">
             <a
               href="#bakllavat"
-              className="whitespace-nowrap bg-[#4A2C1A] px-[34px] py-4 text-sm text-[#FAF7F0] transition-opacity hover:opacity-90"
+              className="shrink-0 whitespace-nowrap bg-[#4A2C1A] px-4 py-3 text-center text-sm text-[#FAF7F0] transition-opacity hover:opacity-90 md:inline-block md:px-[34px] md:py-4"
             >
               Shiko Bakllavat
             </a>

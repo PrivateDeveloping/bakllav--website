@@ -24,7 +24,7 @@ export type SizeId = "small" | "medium" | "big";
 
 export const sizes: { id: SizeId; label: string; note: string; price: number }[] = [
   { id: "small", label: "E vogël", note: "tepsi e vogël", price: 30 },
-  { id: "medium", label: "Mesatare", note: "tepsi mesatare", price: 45 },
+  { id: "medium", label: "E mesme", note: "tepsi e mesme", price: 45 },
   { id: "big", label: "E madhe", note: "tepsi e madhe", price: 55 },
 ];
 
